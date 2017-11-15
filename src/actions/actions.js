@@ -3,7 +3,6 @@
  */
 
 export const FILTER_PILOTS = 'FILTER_PILOTS'
-export const TOGGLE_TODO = 'TOGGLE_TODO'
 
 /*
  * other constants

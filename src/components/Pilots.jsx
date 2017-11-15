@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from './Button';
 
 function Pilot(props) {
   return (
@@ -11,6 +12,10 @@ function Pilot(props) {
   );
 }
 
+function filter(pilots) {
+  console.log('Hello');
+}
+
 class Pilots extends Component {
   render() {
     var pilots = [{ id: 'dummypilot', title: 'A Dummy Pilot', startDate: '1st January 2017', endDate: '31st December 2017', ratings: 12, shares: 9 },
@@ -18,6 +23,7 @@ class Pilots extends Component {
     return (
       <div className="container pilots">
         <h1>Pilots</h1>
+        <Button onClick={filter} text="Click Me"></Button>
         {pilots.map((pilot, i) =>
          <Pilot pilot={pilot} key={pilot.id} />
         )}
