@@ -17,7 +17,7 @@ function visibilityFilter(state = SHOW_ALL, action) {
 function pilots(state = [], action) {
     default:
       return state
-  }
+    }
 }
 
 const reducers = combineReducers({
